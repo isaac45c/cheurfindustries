@@ -1,112 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CHEURFI INDUSTRIES</title>
-  <link rel="icon" type="image/x-icon" href="/cheurfindustries/img/onglet_logo_png.png">
-  <link rel="stylesheet" href="/cheurfindustries/otr/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breach Place</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e1e1e;
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    section {
+      padding: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card audio {
+      width: 100%;
+    }
+  </style>
 </head>
-<body class="dark-theme">
+<body>
+  <header>Breach Place</header>
 
-<header id="main-header" class="shell-nav">
-  <div class="shell-nav__logo">
-    <img src="/cheurfindustries/img/full_logo_png.png" alt="Spinzone Logo">
-  </div>
-  <nav class="shell-nav__link-list">
-    <button>Home</button>
-    <button>Explore</button>
-    <button>Trending</button>
-    <button>Photos</button>
-    <button>Videos</button>
-    <button>Live Streams</button>
-    <button>Music</button>
-    <button>Stories</button>
-    <button>Profile</button>
-    <button>Notifications</button>
-    <button>Settings</button>
-  </nav>
-  <div class="shell-nav__search-container">
-    <form id="search-form" method="get" action="#">
-      <input type="text" name="q" placeholder="Search for anything" aria-label="Search">
-      <button type="submit">Search</button>
-    </form>
-  </div>
-</header>
-
-<main>
-  <!-- Welcome Section -->
-  <section id="welcome">
-    <h2>Welcome to Spinzone</h2>
-    <p>Your one-stop platform to share videos, photos, and stories with the world!</p>
-  </section>
-
-  <!-- Recommendations Section -->
-  <section id="recommendations">
-    <h2>Recommended for You</h2>
-    <div>
-      <a href="/Spinzone/file/no_video.png">
-        <img src="/Spinzone/file/no_miniatures.png" alt="No Video Available">
-      </a>
-      <h3>Outro Video (Impostor Instrumental)</h3>
-      <p>Views: 15M #Intro #Outro #Impostor #AmongUs</p>
+  <section id="albums">
+    <h2>Albums</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="album1.jpg" alt="Album 1">
+        <audio controls>
+          <source src="music/album1/song1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+          <source src="music/album1/song2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <!-- Add more albums here -->
     </div>
   </section>
 
-  <!-- Trending Section -->
-  <section id="trending">
-    <h2>Trending Now</h2>
-    <p>Check out the latest trends in videos, photos, and music!</p>
-  </section>
-
-  <!-- Photo Sharing Section -->
-  <section id="photos">
-    <h2>Photos</h2>
-    <div>
-      <p>Share your favorite moments.</p>
-      <button>Upload Photo</button>
+  <section id="eps">
+    <h2>EPs</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="ep1.jpg" alt="EP 1">
+        <audio controls>
+          <source src="music/ep1/song1.mp3" type="audio/mpeg">
+        </audio>
+        <audio controls>
+          <source src="music/ep1/song2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <!-- Add more EPs here -->
     </div>
   </section>
 
-  <!-- Video Sharing Section -->
-  <section id="videos">
-    <h2>Videos</h2>
-    <div>
-      <p>Upload or watch videos from our community.</p>
-      <button>Upload Video</button>
+  <section id="singles">
+    <h2>Singles</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="single1.jpg" alt="Single 1">
+        <audio controls>
+          <source src="music/singles/single1.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <!-- Add more singles here -->
     </div>
   </section>
-
-  <!-- Live Stream Section -->
-  <section id="live-streams">
-    <h2>Live Streams</h2>
-    <p>Go live or join live events from creators worldwide.</p>
-    <button>Start a Live Stream</button>
-  </section>
-
-  <!-- Music Section -->
-  <section id="music">
-    <h2>Music</h2>
-    <p>Discover and share your favorite tunes.</p>
-  </section>
-
-  <!-- Stories Section -->
-  <section id="stories">
-    <h2>Stories</h2>
-    <p>Post short updates for your friends to see.</p>
-    <button>Create a Story</button>
-  </section>
-
-  <!-- Notifications Section -->
-  <section id="notifications">
-    <h2>Notifications</h2>
-    <p>Stay updated with the latest activity.</p>
-  </section>
-</main>
-
-<footer id="main-footer">
-  <p>Created by <a href="/Spinzone/file/Isaac_Cheurfi">Isaac Cheurfi</a> and collaborators. Respect our work and enjoy the platform!</p>
-  <p>&copy; 2024 Spinzone Corporation. All Rights Reserved.</p>
-  <p>Made with love in Orléans, France.</p>
-</footer>
-
 </body>
 </html>
